@@ -5,8 +5,8 @@
   height: 70px !important;
   margin-bottom: 0px !important;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
@@ -18,26 +18,12 @@
 
 /* Logo */
 .navbar-brand {
-  margin-bottom: 15px;
+  margin-bottom: 37px;
 }
 
-.navbar-brand h5 {
-  display: inline;
-  font-size: 30px;
-}
+.logo {
+  height: 60px;
 
-#C {
-  color: white;
-  background-color: black;
-  padding: 4px 12px;
-}
-
-#M {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-  padding: 3px 12px;
-  margin-left: -5px;
 }
 
 /* Right section */
@@ -45,13 +31,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 35vw;
+  padding-left: 3vw;
+}
+
+.navbar-right a {
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 /* Basic navbar item */
 .navbar-item {
   cursor: pointer;
-  padding: 0 20px;
+  padding: 8px 20px;
+  margin: 5px;
 }
 
 /* Navbar link */
@@ -96,4 +90,28 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+/* Jumbotron */
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  right: 41vw;
+  bottom: 15vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 22vw;
+  padding: 1vw;
+}
+
+.video-logo {
+  width: 20vw;
 }

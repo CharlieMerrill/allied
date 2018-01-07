@@ -12,34 +12,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 </head>
 <body>
   <!-- Navigation Bar -->
   <div class="navbar navbar-fixed-top">
     <!-- Logo -->
     <a href="#" class="navbar-brand">
-      <h5>Allied</h5>
+      <img class="logo" src="images/allied_logo.png" alt="Allied Logo">
     </a>
 
     <!-- Right Navigation -->
     <div class="navbar-right hidden-xs hidden-sm">
-      <a href="#" class="navbar-item navbar-link">About</a>
-      <a href="#" class="navbar-item navbar-link">Products</a>
-      <a href="#" class="navbar-item navbar-link">Partners</a>
-      <a href="#" class="navbar-item navbar-link">Contact</a>
+      <a href="#" class="navbar-item navbar-link">ABOUT</a>
+      <a href="#" class="navbar-item navbar-link">PRODUCTS</a>
+      <a href="#" class="navbar-item navbar-link">PARTNERS</a>
+      <a href="#" class="navbar-item navbar-link">CONTACT</a>
     </div>
 
     <!-- Dropdown appearing on mobile only -->
-    <div class="navbar-item hidden-md hidden-lg">
+    <div class="navbar-item hidden-md hidden-lg hidden-xl">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
-          <li><a href="#projects-samples">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work-experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <!-- Video -->
+  <div class="jumbotron">
+    <video autoplay muted loop id="myVideo">
+      <source src="images/Neverstop.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+      <img class="video-logo" src="images/videologo.png" alt="Allied Logo">
     </div>
   </div>
 </body>
