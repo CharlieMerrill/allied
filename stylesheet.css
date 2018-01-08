@@ -1,3 +1,7 @@
+body {
+  display: inline;
+}
+
 /* Main navbar */
 .navbar {
   background: white;
@@ -94,16 +98,17 @@
 
 /* Jumbotron */
 
+.jumbotron {
+  height: 100%;
+}
+
 #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
   min-width: 100%;
   min-height: 100%;
 }
 
 .content {
-  position: fixed;
+  position: absolute;
   right: 41vw;
   bottom: 15vh;
   background: rgba(0, 0, 0, 0.5);
@@ -114,4 +119,81 @@
 
 .video-logo {
   width: 20vw;
+}
+
+/* Info Panel */
+
+.info-panel {
+  background-color: #293F50;
+  z-index: 2;
+  margin-top: -85px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 0px 20px #333333;
+  font-weight: bold;
+}
+
+.info-title {
+  color: #1AD5FA;
+  font-size: 22px;
+}
+
+.info-item {
+  width: 300px;
+  padding: 30px;
+}
+
+.info-icon {
+  height: 70px;
+}
+
+.border {
+  border-right: 2px solid white;
+  height: 220px;
+  margin-top: 40px;
+}
+
+/* Photo Section */
+
+.photo-section img {
+  width: 100vw;
+}
+
+/* Partner Section */
+
+.partners {
+  color: white;
+  background-color: black;
+}
+
+.partner-text {
+  border-bottom: 4px solid #999999;
+  align-items: center;
+  text-align: center;
+  width: 380px;
+  padding-top: 1px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.partner-text h1 {
+  font-size: 60px;
+}
+
+.partner-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  height: 75px;
+  margin: 12px;
+}
+
+.inverse-color {
+  filter: invert(100%);
 }
