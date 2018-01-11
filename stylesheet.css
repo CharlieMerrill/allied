@@ -14,7 +14,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   border-radius: 0px !important;
   box-shadow: 0px 1px 5px #7F7F7F;
   z-index: 1;
@@ -63,6 +63,10 @@ body {
 }
 
 /* Dropdown menu */
+.mobile-nav {
+  margin-left: 70vw;
+}
+
 .navbar-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
@@ -103,14 +107,13 @@ body {
 }
 
 #myVideo {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
 }
 
 .content {
   position: absolute;
   right: 41vw;
-  bottom: 15vh;
+  top: 20vh;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 22vw;
@@ -132,7 +135,6 @@ body {
   flex-wrap: wrap;
   text-align: center;
   color: white;
-  box-shadow: 5px 0px 20px #333333;
   font-weight: bold;
 }
 
@@ -142,7 +144,7 @@ body {
 }
 
 .info-item {
-  width: 300px;
+  width: 254px;
   padding: 30px;
 }
 
@@ -152,7 +154,7 @@ body {
 
 .border {
   border-right: 2px solid white;
-  height: 220px;
+  height: 240px;
   margin-top: 40px;
 }
 
@@ -196,4 +198,18 @@ body {
 
 .inverse-color {
   filter: invert(100%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .content {
+    top: 14vh;
+  } .partner-logo {
+    max-width: 95vw;
+  } .navbar {
+    justify-content: space-between;
+  } .mobile-nav {
+    margin-left: 0;
+  }
 }
